@@ -1,0 +1,39 @@
+*::-moz-selection {
+    background-color: #44337A;
+    color: #FFFFFF;
+  }
+  
+  *::selection {
+    background-color: #44337A;
+    color: #FFFFFF;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  #webcamInput ~ svg {
+    opacity: 0 !important;
+  }
+  
+  #webcamInput:checked ~ svg {
+    opacity: 1 !important;
+  }
+  
+  #langInput ~ .radioDot {
+    opacity: 0 !important;
+  }
+  
+  #langInput:checked ~ .radioDot {
+    opacity: 1 !important;
+  }
+  
+  .square {
+    position: relative;
+    padding-top: 100%;
+  }
+  
+  .rect {
+    position: relative;
+    padding-top: 56.25%;
+  }
