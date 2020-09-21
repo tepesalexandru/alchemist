@@ -32,7 +32,7 @@ export default class Form extends Component {
                   First Name
                 </label>
                 <input
-                  className="w-full py-2 px-4 rounded-md border-2 border-gray-400 bg-gray-200 focus:outline-none focus:shadow-outline"
+                  className="w-full py-2 px-4 rounded-md border-2 border-purple-400 bg-gray-200 focus:outline-none focus:shadow-outline"
                   name="fName"
                   type="text"
                   placeholder="John"
@@ -47,7 +47,7 @@ export default class Form extends Component {
                   Last Name
                 </label>
                 <input
-                  className="w-full py-2 px-4 rounded-md border-2 border-gray-400 bg-gray-200 focus:outline-none focus:shadow-outline"
+                  className="w-full py-2 px-4 rounded-md border-2 border-purple-400 bg-gray-200 focus:outline-none focus:shadow-outline"
                   name="lName"
                   type="text"
                   placeholder="Doe"
@@ -62,7 +62,7 @@ export default class Form extends Component {
                   Speciality
                 </label>
                 <input
-                  className="w-full py-2 px-4 rounded-md border-2 border-gray-400 bg-gray-200 focus:outline-none focus:shadow-outline"
+                  className="w-full py-2 px-4 rounded-md border-2 border-purple-400 bg-gray-200 focus:outline-none focus:shadow-outline"
                   name="speciality"
                   type="text"
                   placeholder="Atrologist, Fortune Teller etc"
@@ -77,7 +77,7 @@ export default class Form extends Component {
                   Email
                 </label>
                 <input
-                  className="w-full py-2 px-4 rounded-md border-2 border-gray-400 bg-gray-200 focus:outline-none focus:shadow-outline"
+                  className="w-full py-2 px-4 rounded-md border-2 border-purple-400 bg-gray-200 focus:outline-none focus:shadow-outline"
                   name="email"
                   type="email"
                   placeholder="myEmail@email.com"
@@ -92,7 +92,7 @@ export default class Form extends Component {
                   Phone
                 </label>
                 <input
-                  className="w-full py-2 px-4 rounded-md border-2 border-gray-400 bg-gray-200 focus:outline-none focus:shadow-outline"
+                  className="w-full py-2 px-4 rounded-md border-2 border-purple-400 bg-gray-200 focus:outline-none focus:shadow-outline"
                   name="phone"
                   type="tel"
                   placeholder="0123 456 789"
@@ -107,7 +107,7 @@ export default class Form extends Component {
                   Postal Code
                 </label>
                 <input
-                  className="w-full py-2 px-4 rounded-md border-2 border-gray-400 bg-gray-200 focus:outline-none focus:shadow-outline"
+                  className="w-full py-2 px-4 rounded-md border-2 border-purple-400 bg-gray-200 focus:outline-none focus:shadow-outline"
                   name="postalCode"
                   type="text"
                   placeholder={"012356"}
@@ -130,7 +130,7 @@ export default class Form extends Component {
                   Experience
                 </p>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -143,7 +143,7 @@ export default class Form extends Component {
                   <label htmlFor="below1">Below 1 year</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -155,7 +155,7 @@ export default class Form extends Component {
                   <label htmlFor="y1-5">1 - 5 years</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -167,7 +167,7 @@ export default class Form extends Component {
                   <label htmlFor="y5-10">5 - 10 years</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -186,7 +186,7 @@ export default class Form extends Component {
                   <span className="text-xs md:text-sm">(per month)</span>
                 </p>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -198,7 +198,7 @@ export default class Form extends Component {
                   <span>0 - 15</span>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -210,7 +210,7 @@ export default class Form extends Component {
                   <label htmlFor="c15-30">15 - 30</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -222,7 +222,7 @@ export default class Form extends Component {
                   <label htmlFor="c30-50">30 - 50</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -240,7 +240,7 @@ export default class Form extends Component {
                   Do you have a Cabinet or a place to recieve your Customers?
                 </p>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -252,7 +252,7 @@ export default class Form extends Component {
                   <label htmlFor="cabYes">Yes</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -270,7 +270,7 @@ export default class Form extends Component {
                   When will you be ready to Work?
                 </p>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -282,7 +282,7 @@ export default class Form extends Component {
                   <label htmlFor="workNow">Now</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -294,7 +294,7 @@ export default class Form extends Component {
                   <label htmlFor="workUnder1m">Under 1 month</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -323,7 +323,7 @@ export default class Form extends Component {
                   What do you want to improve in your activity?
                 </p>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -337,7 +337,7 @@ export default class Form extends Component {
                   </label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -349,7 +349,7 @@ export default class Form extends Component {
                   <label htmlFor="improveNoOfCustomers">No. of Customers</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -363,7 +363,7 @@ export default class Form extends Component {
                   </label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -381,7 +381,7 @@ export default class Form extends Component {
                   How did you discover myAlchemist
                 </p>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -393,7 +393,7 @@ export default class Form extends Component {
                   <label htmlFor="findGoogle">Google</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -405,7 +405,7 @@ export default class Form extends Component {
                   <label htmlFor="findSocial">Social Media</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -417,7 +417,7 @@ export default class Form extends Component {
                   <label htmlFor="findBlog">Blog</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -429,7 +429,7 @@ export default class Form extends Component {
                   <label htmlFor="findPrivate">Private</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -447,7 +447,7 @@ export default class Form extends Component {
                   I want information about the myAlchemist Academy
                 </p>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"
@@ -459,7 +459,7 @@ export default class Form extends Component {
                   <label htmlFor="infoYes">Yes</label>
                 </div>
                 <div className="relative w-full text-left text-xl font-medium flex items-center py-2">
-                  <div className="h-6 w-6 bg-purple-700 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
+                  <div className="h-6 w-6 bg-purple-500 rounded-full flex justify-center items-center mr-2 mt-px flex-shrink-0">
                     <input
                       className="cRInput absolute top-0 left-0 w-full h-full cursor-pointer focus:outline-none focus:shadow-outline"
                       type="radio"

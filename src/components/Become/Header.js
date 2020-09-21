@@ -2,9 +2,9 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import {showLanguages, showMobile} from '../../actions/index';
+import { showLanguages, showMobile } from "../../actions/index";
 
-function Header({showLanguages, showMobile}) {
+function Header({ showLanguages, showMobile }) {
   return (
     <header
       className="w-full px-6 bg-cover bg-center"
@@ -25,7 +25,7 @@ function Header({showLanguages, showMobile}) {
         {/* Desktop Nav */}
         <div className="items-center hidden md:flex">
           <button
-          onClick={() => showLanguages(true)}
+            onClick={() => showLanguages(true)}
             id="langBtn"
             className="rounded-full focus:outline-none focus:shadow-outline px-1 flex items-center"
           >
@@ -48,15 +48,15 @@ function Header({showLanguages, showMobile}) {
             </svg>
           </button>
           <Link to="/login">
-            <div className="ml-8 py-2 px-3 border border-white rounded-lg focus:outline-none focus:shadow-outline">
-              Login / Sign Up
+            <div className="ml-8 py-2 px-3 border border-white hover:bg-purple-500 bg-purple-700 rounded-lg  focus:outline-none focus:shadow-outline">
+              Sign In / Join
             </div>
           </Link>
         </div>
         {/* Menu Icon */}
         <div className="md:hidden z-50 transform scale-50">
           <button
-          onClick={() => showMobile(true)}
+            onClick={() => showMobile(true)}
             className="hamburger hamburger--emphatic focus:outline-none focus:shadow-outline rounded"
             type="button"
           >
@@ -72,7 +72,6 @@ function Header({showLanguages, showMobile}) {
         />
         {/* Mobile Menu Bar */}
         <div
-        
           id="menuM"
           className="absolute top-0 left-0 w-full px-6 transform translate-y-16 md:hidden z-50 opacity-0 pointer-events-none transition duration-150"
         >
@@ -125,8 +124,9 @@ function Header({showLanguages, showMobile}) {
 
 const mapStateToProps = (state) => {
   return {};
-}
+};
 
 export default connect(mapStateToProps, {
-  showLanguages, showMobile
+  showLanguages,
+  showMobile,
 })(Header);

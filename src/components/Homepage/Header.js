@@ -46,7 +46,7 @@ function Header({ showLanguages, showMobile }) {
             </button>
           </Link>
           <Link to="/login">
-            <button className="text-white ml-8 py-2 px-3 border border-white rounded-lg focus:outline-none focus:shadow-outline">
+            <button className="text-white ml-8 py-2 px-3 border border-white hover:bg-purple-500 bg-purple-700 rounded-lg focus:outline-none focus:shadow-outline">
               Sign in / Join
             </button>
           </Link>
@@ -78,7 +78,7 @@ function Header({ showLanguages, showMobile }) {
       {/* Banner */}
       <div className="max-w-6xl w-full mx-auto pt-56 pb-48 px-4">
         <h1 className="text-3xl md:text-5xl leading-tight text-white font-bold text-center">
-          An immersion into your Univers
+          An immersion into your Universe
         </h1>
         <div className="flex justify-center items-baseline">
           <p className="text-purple-300 text-base md:text-xl">Trusted by</p>
