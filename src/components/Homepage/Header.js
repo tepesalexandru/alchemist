@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import {showLanguages, showMobile} from '../../actions/index'
+import { showLanguages, showMobile } from "../../actions/index";
 
-function Header({showLanguages, showMobile}) {
+function Header({ showLanguages, showMobile }) {
   return (
     <header
       className="w-full px-4 bg-cover bg-center"
@@ -18,7 +18,10 @@ function Header({showLanguages, showMobile}) {
           alt="logo"
         />
         <div className="items-center hidden md:flex">
-          <button onClick={() => showLanguages(true)} className="rounded-full focus:outline-none focus:shadow-outline text-white px-1 flex items-center">
+          <button
+            onClick={() => showLanguages(true)}
+            className="rounded-full focus:outline-none focus:shadow-outline text-white px-1 flex items-center"
+          >
             EN
             <svg
               className="h-5 w-5 ml-1"
@@ -48,9 +51,12 @@ function Header({showLanguages, showMobile}) {
             </button>
           </Link>
         </div>
-        <button onClick={() => {
-          showMobile(true);
-        }} className="md:hidden focus:outline-none focus:shadow-outline rounded">
+        <button
+          onClick={() => {
+            showMobile(true);
+          }}
+          className="md:hidden focus:outline-none focus:shadow-outline rounded"
+        >
           <svg
             className="h-6 w-6"
             width={24}
@@ -68,12 +74,11 @@ function Header({showLanguages, showMobile}) {
             />
           </svg>
         </button>
-        
       </nav>
       {/* Banner */}
       <div className="max-w-6xl w-full mx-auto pt-56 pb-48 px-4">
         <h1 className="text-3xl md:text-5xl leading-tight text-white font-bold text-center">
-          An immersion into your Universe
+          An immersion into your Univers
         </h1>
         <div className="flex justify-center items-baseline">
           <p className="text-purple-300 text-base md:text-xl">Trusted by</p>
@@ -93,5 +98,6 @@ function Header({showLanguages, showMobile}) {
   );
 }
 export default connect(null, {
-  showLanguages, showMobile
+  showLanguages,
+  showMobile,
 })(Header);
