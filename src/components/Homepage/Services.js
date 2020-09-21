@@ -1,19 +1,28 @@
 import React from "react";
-import ReactSiema from 'react-siema';
+import ReactSiema from 'sns-react-siema';
 
 export default function Services() {
 
   const options = {
+    resizeDebounce: 250,
+    duration: 200,
+    easing: "ease-out",
     perPage: {
       1024: 4,
       768: 3,
       598: 2,
       1: 1.25,
     },
-  }
+    startIndex: 0,
+    draggable: true,
+    threshold: 20,
+    loop: false,
+  };
+
+  let slider;
 
   return (
-    <React.Fragment>
+    <div>
       <div className="max-w-screen-xl w-full mx-auto px-4 md:px-16 mb-8">
         <h2 className="text-2xl md:text-4xl font-medium">Popular Services</h2>
       </div>
@@ -21,8 +30,8 @@ export default function Services() {
         {/* Carousel */}
         
         <div className="w-full siema pb-2">
-        <ReactSiema {...options}>
-          {/* Slide */}
+        <ReactSiema {...options} ref={siema => slider = siema}>
+         
           <div className="px-4">
             <button className="w-full flex flex-col items-center bg-white rounded-lg shadow-md overflow-hidden focus:outline-none focus:shadow-outline">
               <div className="square w-full">
@@ -32,7 +41,7 @@ export default function Services() {
                   alt="service"
                 />
               </div>
-              <h6 className="text-base md:text-xl font-medium px-4 pb-4 text-center">
+              <h6 className="text-base md:text-xl font-medium px-4 pb-4 text-center uppercase">
                 Astrology
               </h6>
             </button>
@@ -47,7 +56,7 @@ export default function Services() {
                   alt="service"
                 />
               </div>
-              <h6 className="text-base md:text-xl font-medium px-4 pb-4 text-center">
+              <h6 className="text-base md:text-xl font-medium px-4 pb-4 text-center uppercase">
                 Tarot
               </h6>
             </button>
@@ -62,8 +71,8 @@ export default function Services() {
                   alt="service"
                 />
               </div>
-              <h6 className="text-base md:text-xl font-medium px-4 pb-4 text-center">
-                Magic
+              <h6 className="text-base md:text-xl font-medium px-4 pb-4 text-center uppercase">
+                Medium
               </h6>
             </button>
           </div>
@@ -77,8 +86,8 @@ export default function Services() {
                   alt="service"
                 />
               </div>
-              <h6 className="text-base md:text-xl font-medium px-4 pb-4 text-center">
-                Candle
+              <h6 className="text-base md:text-xl font-medium px-4 pb-4 text-center uppercase">
+                Wicca
               </h6>
             </button>
           </div>
@@ -92,7 +101,7 @@ export default function Services() {
                   alt="service"
                 />
               </div>
-              <h6 className="text-base md:text-xl font-medium px-4 pb-4 text-center">
+              <h6 className="text-base md:text-xl font-medium px-4 pb-4 text-center uppercase">
                 Candle
               </h6>
             </button>
@@ -102,6 +111,7 @@ export default function Services() {
        
         {/* Buttons */}
         <button
+        onClick={() =>slider.prev()}
           className="prev absolute left-0 h-10 w-10 md:flex justify-center items-center bg-white rounded-full focus:outline-none focus:shadow-outline transform translate-x-full -translate-y-1/2 shadow-md hidden"
           style={{ top: "50%" }}
         >
@@ -123,6 +133,7 @@ export default function Services() {
           </svg>
         </button>
         <button
+        onClick={() =>slider.next()}
           className="next absolute right-0 h-10 w-10 md:flex justify-center items-center bg-white rounded-full focus:outline-none focus:shadow-outline transform -translate-x-full -translate-y-1/2 shadow-md hidden"
           style={{ top: "50%" }}
         >
@@ -144,6 +155,6 @@ export default function Services() {
           </svg>
         </button>
       </div>
-    </React.Fragment>
+    </div>
   );
 }

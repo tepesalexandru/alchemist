@@ -24,9 +24,9 @@ export default function Searchbar() {
                       Select Speciality
                     </option>
                     <option value="Astrology">Astrology</option>
-                    <option value="Astrology">Astrology</option>
-                    <option value="Astrology">Astrology</option>
-                    <option value="Astrology">Astrology</option>
+                    <option value="Astrology">Tarot</option>
+                    <option value="Astrology">Medium</option>
+                    <option value="Astrology">Wicca</option>
                   </select>
                   {/* Arrow */}
                   <div className="absolute top-0 right-0 flex items-center pr-3 h-full pointer-events-none">

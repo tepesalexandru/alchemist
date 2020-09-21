@@ -1,10 +1,15 @@
 import React from "react";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+import {showLanguages, showMobile} from '../../actions/index'
 
-export default function Header() {
+function Header({showLanguages, showMobile}) {
   return (
     <header
       className="w-full px-4 bg-cover bg-center"
-      style={{backgroundImage: `url(" ${require("../../assets/Back.png")} ")` }}
+      style={{
+        backgroundImage: `url(" ${require("../../assets/Back.png")} ")`,
+      }}
     >
       <nav className="max-w-screen-xl mx-auto w-full border-b border-purple-300 py-1 flex justify-between items-center">
         <img
@@ -13,7 +18,7 @@ export default function Header() {
           alt="logo"
         />
         <div className="items-center hidden md:flex">
-          <button className="rounded-full focus:outline-none focus:shadow-outline text-white px-1 flex items-center">
+          <button onClick={() => showLanguages(true)} className="rounded-full focus:outline-none focus:shadow-outline text-white px-1 flex items-center">
             EN
             <svg
               className="h-5 w-5 ml-1"
@@ -32,20 +37,20 @@ export default function Header() {
               />
             </svg>
           </button>
-          <button className="text-white ml-8 focus:outline-none focus:shadow-outline px-1">
-            About Us
-          </button>
-          <button className="text-white ml-8 focus:outline-none focus:shadow-outline px-1">
-            Support
-          </button>
-          <button className="text-white ml-8 focus:outline-none focus:shadow-outline px-1">
-            Become an Alchemist
-          </button>
-          <button className="text-white ml-8 py-2 px-3 border border-white rounded-lg focus:outline-none focus:shadow-outline">
-            Sign in / Join
-          </button>
+          <Link to="/become">
+            <button className="text-white ml-8 focus:outline-none focus:shadow-outline px-1">
+              Become an Alchemist
+            </button>
+          </Link>
+          <Link to="/login">
+            <button className="text-white ml-8 py-2 px-3 border border-white rounded-lg focus:outline-none focus:shadow-outline">
+              Sign in / Join
+            </button>
+          </Link>
         </div>
-        <button className="md:hidden focus:outline-none focus:shadow-outline rounded">
+        <button onClick={() => {
+          showMobile(true);
+        }} className="md:hidden focus:outline-none focus:shadow-outline rounded">
           <svg
             className="h-6 w-6"
             width={24}
@@ -63,6 +68,7 @@ export default function Header() {
             />
           </svg>
         </button>
+        
       </nav>
       {/* Banner */}
       <div className="max-w-6xl w-full mx-auto pt-56 pb-48 px-4">
@@ -86,3 +92,6 @@ export default function Header() {
     </header>
   );
 }
+export default connect(null, {
+  showLanguages, showMobile
+})(Header);
