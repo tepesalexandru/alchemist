@@ -2,15 +2,9 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-<<<<<<< HEAD
-import {showLanguages, showMobile} from '../../actions/index';
-
-function Header({showLanguages, showMobile}) {
-=======
 import { showLanguages, showMobile } from "../../actions/index";
 
 function Header({ showLanguages, showMobile }) {
->>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
   return (
     <header
       className="w-full px-6 bg-cover bg-center"
@@ -31,11 +25,7 @@ function Header({ showLanguages, showMobile }) {
         {/* Desktop Nav */}
         <div className="items-center hidden md:flex">
           <button
-<<<<<<< HEAD
-          onClick={() => showLanguages(true)}
-=======
             onClick={() => showLanguages(true)}
->>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
             id="langBtn"
             className="rounded-full focus:outline-none focus:shadow-outline px-1 flex items-center"
           >
@@ -58,24 +48,15 @@ function Header({ showLanguages, showMobile }) {
             </svg>
           </button>
           <Link to="/login">
-<<<<<<< HEAD
-            <div className="ml-8 py-2 px-3 border border-white rounded-lg focus:outline-none focus:shadow-outline">
-              Login / Sign Up
-=======
             <div className="ml-8 py-2 px-3 border border-white hover:bg-purple-500 bg-purple-700 rounded-lg  focus:outline-none focus:shadow-outline">
               Sign In / Join
->>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
             </div>
           </Link>
         </div>
         {/* Menu Icon */}
         <div className="md:hidden z-50 transform scale-50">
           <button
-<<<<<<< HEAD
-          onClick={() => showMobile(true)}
-=======
             onClick={() => showMobile(true)}
->>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
             className="hamburger hamburger--emphatic focus:outline-none focus:shadow-outline rounded"
             type="button"
           >
@@ -91,10 +72,6 @@ function Header({ showLanguages, showMobile }) {
         />
         {/* Mobile Menu Bar */}
         <div
-<<<<<<< HEAD
-        
-=======
->>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
           id="menuM"
           className="absolute top-0 left-0 w-full px-6 transform translate-y-16 md:hidden z-50 opacity-0 pointer-events-none transition duration-150"
         >
@@ -147,17 +124,8 @@ function Header({ showLanguages, showMobile }) {
 
 const mapStateToProps = (state) => {
   return {};
-<<<<<<< HEAD
 }
 
 export default connect(mapStateToProps, {
   showLanguages, showMobile
 })(Header);
-=======
-};
-
-export default connect(mapStateToProps, {
-  showLanguages,
-  showMobile,
-})(Header);
->>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
