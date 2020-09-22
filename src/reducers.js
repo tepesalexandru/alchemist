@@ -22,7 +22,6 @@ const uiReducer = (oldState = INITIAL_STATE, action) => {
     }
 }
 
-<<<<<<< HEAD
 const userReducer = (oldState = "", action) => {
     switch (action.type) {
         case 'LOGIN_FACEBOOK':
@@ -35,8 +34,4 @@ const userReducer = (oldState = "", action) => {
 export default combineReducers({
     ui: uiReducer,
     user: userReducer
-=======
-export default combineReducers({
-    ui: uiReducer
->>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
 })
