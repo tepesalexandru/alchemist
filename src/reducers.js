@@ -22,6 +22,16 @@ const uiReducer = (oldState = INITIAL_STATE, action) => {
     }
 }
 
+const userReducer = (oldState = "", action) => {
+    switch (action.type) {
+        case 'LOGIN_FACEBOOK':
+            return action.payload;
+        default:
+            return oldState;
+    }
+}
+
 export default combineReducers({
-    ui: uiReducer
+    ui: uiReducer,
+    user: userReducer
 })

@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Header from './Header';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import server from '../../server';
 
 export default class Login extends Component {
+
   render() {
     return (
       <div>
@@ -16,7 +18,8 @@ export default class Login extends Component {
           </h3>
           {/* Buttons */}
           <div className="w-full grid grid-cols-1 gap-4 mb-8 px-8">
-            <button
+            <a
+            href="http://localhost:4000/auth/facebook"
               className="flex items-center py-2 px-6 rounded text-white text-sm md:text-base focus:outline-none focus:shadow-outline"
               style={{ backgroundColor: "#4267b2" }}
             >
@@ -34,8 +37,9 @@ export default class Login extends Component {
                 />
               </svg>
               <span>Log in to Facebook</span>
-            </button>
-            <button
+            </a>
+            <a
+            href="http://localhost:4000/auth/google"
               className="flex items-center py-2 px-6 rounded text-white text-sm md:text-base focus:outline-none focus:shadow-outline"
               style={{ backgroundColor: "#4285f4" }}
             >
@@ -65,7 +69,7 @@ export default class Login extends Component {
                 />
               </svg>
               <span>Continue with Google</span>
-            </button>
+            </a>
           </div>
           {/* OR */}
           <div className="w-full mb-4 px-8">

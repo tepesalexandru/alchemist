@@ -18,3 +18,10 @@ export const showMobile = (show) => {
         payload: show
     }
 }
+
+export const authLogin = (type, username) => {
+    return {
+        type: 'LOGIN_FACEBOOK',
+        payload: username
+    }
+}

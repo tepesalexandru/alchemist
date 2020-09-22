@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import server from '../../server';
 
 export default class Form extends Component {
   render() {
@@ -476,8 +477,11 @@ export default class Form extends Component {
           {/* Submit */}
           <div className="flex justify-end py-4 md:py-8 px-6 md:px-16 bg-gray-100 border-t">
             <input
+            onClick={() => {
+              server.post("/mail/send");
+            }}
               className="bg-orange-300 hover:bg-orange-400 text-orange-800 rounded-md px-6 py-3 focus:outline-none focus:shadow-outline cursor-pointer"
-              type="submit"
+              type="button"
               defaultValue="Submit Application"
             />
           </div>
