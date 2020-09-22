@@ -12,6 +12,10 @@ export default function App() {
     <div>
       <BrowserRouter>
         <div>
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
           <Route path="/">
             <Route path="/login" component={Login} />
             <Route path="/sign-up" component={SignUp} />
@@ -23,7 +27,11 @@ export default function App() {
           <Modals />
         </div>
       </BrowserRouter>
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
       <Footer />
     </div>
   );

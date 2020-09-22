@@ -57,7 +57,7 @@ function Header({ showLanguages, showMobile, user }) {
             </button>
           </Link>
           <Link to="/login">
-            <button className="text-white ml-8 py-2 px-3 border border-white rounded-lg focus:outline-none focus:shadow-outline">
+            <button className="text-white ml-8 py-2 px-3 border border-white hover:bg-purple-500 bg-purple-700 rounded-lg focus:outline-none focus:shadow-outline">
               Sign in / Join
             </button>
           </Link>

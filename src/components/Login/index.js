@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 import Header from './Header';
+<<<<<<< HEAD
 import {Link} from 'react-router-dom';
 import server from '../../server';
 
 export default class Login extends Component {
 
+=======
+import {Link} from 'react-router-dom'
+
+export default class Login extends Component {
+>>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
   render() {
     return (
       <div>
@@ -18,8 +24,12 @@ export default class Login extends Component {
           </h3>
           {/* Buttons */}
           <div className="w-full grid grid-cols-1 gap-4 mb-8 px-8">
+<<<<<<< HEAD
             <a
             href="http://localhost:4000/auth/facebook"
+=======
+            <button
+>>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
               className="flex items-center py-2 px-6 rounded text-white text-sm md:text-base focus:outline-none focus:shadow-outline"
               style={{ backgroundColor: "#4267b2" }}
             >
@@ -37,9 +47,14 @@ export default class Login extends Component {
                 />
               </svg>
               <span>Log in to Facebook</span>
+<<<<<<< HEAD
             </a>
             <a
             href="http://localhost:4000/auth/google"
+=======
+            </button>
+            <button
+>>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
               className="flex items-center py-2 px-6 rounded text-white text-sm md:text-base focus:outline-none focus:shadow-outline"
               style={{ backgroundColor: "#4285f4" }}
             >
@@ -69,7 +84,11 @@ export default class Login extends Component {
                 />
               </svg>
               <span>Continue with Google</span>
+<<<<<<< HEAD
             </a>
+=======
+            </button>
+>>>>>>> 48d21299b4ba44b17e5425befa162010b666b952
           </div>
           {/* OR */}
           <div className="w-full mb-4 px-8">
