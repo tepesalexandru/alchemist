@@ -29,7 +29,7 @@
     "eject": "react-scripts eject",
     "build-css": "tailwindcss build src/styles/tailwind.css -o src/styles/styles.css"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://alchemistserver.herokuapp.com/",
   "secure": false,
   "eslintConfig": {
     "extends": "react-app"
