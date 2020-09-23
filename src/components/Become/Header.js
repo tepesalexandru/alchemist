@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { showLanguages, showMobile } from "../../actions/index";
 
-function Header({ showLanguages, showMobile }) {
+function Header({ showLanguages, showMobile, navClass }) {
   return (
     <header
       className="w-full px-6 bg-cover bg-center"
@@ -12,6 +12,9 @@ function Header({ showLanguages, showMobile }) {
         backgroundImage: `url(" ${require("../../assets/stars.jpg")} ")`,
       }}
     >
+      <div className={`${navClass}`}>
+
+      
       <nav className="max-w-screen-xl mx-auto w-full border-b border-purple-300 py-1 flex justify-between items-center text-white">
         <div className="flex flex-shrink-0">
           <Link to="/">
@@ -109,6 +112,7 @@ function Header({ showLanguages, showMobile }) {
           </div>
         </div>
       </nav>
+      </div>
       {/* Banner */}
       <div className="max-w-3xl w-full mx-auto py-32 px-6">
         <h1 className="text-3xl md:text-5xl leading-tight text-white font-bold text-center mb-4">
